@@ -7,8 +7,8 @@ const Search = (props) => {
                 <legend hidden>Github Repo Search</legend>
                 <fieldset>
                     <label htmlFor='userName'>Username:</label>
-                    <input name='userName' id='userName'></input>
-                    <button type='submit'>Search</button>
+                    <input onChange={e => props.handleSearchValueChange(e)} name='userName' id='userName'></input>
+                    <button disabled={!props.hasSearchValue || props.loading} type='submit'>Search</button>
                 </fieldset>
             </form>
         </div>

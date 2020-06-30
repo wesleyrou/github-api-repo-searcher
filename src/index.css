@@ -16,7 +16,22 @@ header {
   text-align: center;
 }
 
-.search-container ,.results-container{
-  border: 2px solid black;
+main{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+  margin:auto;
 }
 
+fieldset{
+  border:none;
+  padding:2px 0px;
+}
+
+.search-container ,.results-container{
+  width:600px;
+}
+
+.search-container label,.search-container input {
+  margin: 0 4px 0 0;
+}
